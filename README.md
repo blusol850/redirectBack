@@ -6,7 +6,7 @@
 
 `box install redirectBack`
 
-## Usage
+## Basic Usage
 
 ```cfc
 // handlers/Main.cfc
@@ -21,7 +21,20 @@ component {
 }
 ```
 
-Uses the ColdBox's flash storage to store the last request.  If there is no last request, redirects to "" (empty string).
+## History Usage
+This allows you to redirect 1-5 pages/events back.  
+Ex. You're on an index page of listings, where you click on "new" that brings you to a new form.  After submitting the form, you do not wish to go back to the new form page instead you wish to go back to the index page. `redirectBack( 2 );`
+```cfc
+// handlers/Main.cfc
+component {
+	function plainRedirect( event, rc, prc ) {
+		redirectBack( 2 );
+	}
+}
+```
+
+
+Uses the ColdBox's flash storage to store the last 5 request.  If there is no last request, redirects to "" (empty string).
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
