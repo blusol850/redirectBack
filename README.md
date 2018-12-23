@@ -16,19 +16,25 @@ component {
 	}
 
 	function redirectWithAdditionalParameters( event, rc, prc ) {
-		redirectBack( /* takes anything setNextEvent takes */ );
+		redirectBack( /* takes anything relocate takes */ );
 	}
 }
 ```
 
 ## History Usage
 This allows you to redirect 1-5 pages/events back.  
-Ex. You're on an index page of listings, where you click on "new" that brings you to a new form.  After submitting the form, you do not wish to go back to the new form page instead you wish to go back to the index page. `redirectBack( 2 );`
+Ex. You're on an index page of listings, where you click on "new" that brings you to a new form.  After submitting the form, you do not wish to go back to the new form page instead you wish to go back to the index page. `redirectBack( howFarBack=2 );`
+
+> **NOTE**: `howFarBack` is a named parameter ONLY.  All other parameters will be passed to the `relocate()` function.
 ```cfc
 // handlers/Main.cfc
 component {
 	function plainRedirect( event, rc, prc ) {
-		redirectBack( 2 );
+		redirectBack( howFarBack=2 );
+	}
+
+	function redirectWithAdditionalParameters( event, rc, prc ) {
+		redirectBack( howFarBack=2, /* takes anything relocate takes */ );
 	}
 }
 ```
