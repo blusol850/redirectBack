@@ -7,9 +7,15 @@ component extends="coldbox.system.Interceptor" {
         var moduleSettings = wirebox.getInstance( dsl = "coldbox:moduleSettings:redirectBack" );
 
         if ( ! event.isAjax() ) {
+            r = flash.get( moduleSettings.key, [] );
+            if( ! isArray(r) ){
+                r = [r];
+            } elseif( arrayLen(r) == 5){
+                arrayDeleteAt(r,5);
+            }   
             flash.put(
                 name = moduleSettings.key,
-                value = event.isSES() ? event.getCurrentRoutedUrl() : event.getCurrentEvent(),
+                value = event.isSES() ? r.prepend( event.getCurrentRoutedUrl() ) : r.prepend( event.getCurrentEvent() ),
                 autoPurge = false
             );
         }
