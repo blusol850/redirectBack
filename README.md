@@ -26,7 +26,7 @@ Uses the ColdBox's flash storage to store the last request.  If there is no last
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/2583646?v=4" width="100px;"/><br /><sub><b>Eric Peterson</b></sub>](https://github.com/elpete)<br />[💻](https://github.com/elpete/redirectBack/commits?author=elpete "Code") [📖](https://github.com/elpete/redirectBack/commits?author=elpete "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/35044908?v=4" width="100px;"/><br /><sub><b>Andrew Davis</b></sub>](https://github.com/blusol850)<br />[💻](https://github.com/elpete/redirectBack/commits?author=blusol850 "Code") |
+| [<img src="https://avatars1.githubusercontent.com/u/2583646?v=4" width="100px;"/><br /><sub><b>Eric Peterson</b></sub>](https://github.com/elpete)<br />[💻](https://github.com/elpete/redirectBack/commits?author=elpete "Code") [📖](https://github.com/elpete/redirectBack/commits?author=elpete "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/35044908?v=4" width="100px;"/><br /><sub><b>Andrew Davis</b></sub>](https://github.com/blusol850)<br />[💻](https://github.com/elpete/redirectBack/commits?author=blusol850 "Code") [📖](https://github.com/elpete/redirectBack/commits?author=blusol850 "Documentation") |
 | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
